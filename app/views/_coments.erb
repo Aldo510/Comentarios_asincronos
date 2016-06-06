@@ -1,0 +1,8 @@
+<!--Esta es una vista parcial se utilizan para muchas cosas-->
+<% if @comments %>
+  <ul id="comment_list">
+    <% @comments.each do |comment|%>
+      <li><%= comment.content%><span class="author"><%= comment.autor %></span></li>
+    <% end %>
+  </ul>
+<% end %>
